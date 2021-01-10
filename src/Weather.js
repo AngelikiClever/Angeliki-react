@@ -12,7 +12,7 @@ export default function Weather() {
             <div className="card border-info mb-3">
               <div className="card-header"></div>
               <div className="card-body text-info">
-                <img className="forecast-icon" />
+                <img className="forecast-icon" alt="icon"/>
                 <div className="forecast-temperature">
                   <strong></strong>
                 </div>
