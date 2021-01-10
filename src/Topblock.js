@@ -8,7 +8,7 @@ export default function Weather() {
       <h3>
         {" "}
         18
-        <a><span>°C,</span></a> Sunny
+        <span>°C,</span> Sunny
         <div className="weathericon">
           <img
             className="weathericon"
