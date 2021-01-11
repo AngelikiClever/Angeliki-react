@@ -1,10 +1,13 @@
 import React from "react";
-
 export default function Weather() {
   return (
     <div className="topblock">
-      <h1><span role="img">📍</span>Athens,</h1>
-
+      <h1>
+        <span role="img" aria-label="pin">
+          📍
+        </span>
+        Athens,
+      </h1>
       <h3>
         {" "}
         18
@@ -20,7 +23,13 @@ export default function Weather() {
       </h3>
       <h4>
         <div className="wind">Wind 🌬 : 1 km/h</div>
-        <div className="humidity">Humidity<span role="img">💧</span> : 17%</div>
+        <div className="humidity">
+          Humidity
+          <span role="img" aria-label="drop">
+            💧
+          </span>{" "}
+          : 17%
+        </div>
       </h4>
     </div>
   );
