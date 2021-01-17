@@ -6,11 +6,17 @@ import axios from "axios";
 
 export default function Weather() {
   let [ready, setReady] = useSate(false);
-  let [temperature, setTemperature] = useState(null);
+  let [temweatherData, setWeatherData] = useState(null);
   
 function handleResponse(response) {
-
-setTemperature(response.data.main.temp);
+setWeatherData({
+temperature: response.data.main.temp,
+wind: response.data.wind.speed,
+humidity: response.data.main.humidity,
+description: response.data.weather[0].description,
+city: response.data.name,
+});
+setTemperature();
 setReady(true);
 
 }
@@ -25,11 +31,11 @@ if (ready) {
         <span role="img" aria-label="pin">
           📍
         </span>
-        Athens,
+        {WeatherData.city}
       </h1>
       <h3>
-        <span className="temperature">{Math.round(temperature)}</span>
-        <span>°C,</span> Sunny
+        <span className="temperature">{Math.round(weatherData.temperature)}</span>
+        <span>°C,</span> {weatherData.description}
         <div className="weathericon">
           <img
             className="weathericon"
@@ -40,13 +46,13 @@ if (ready) {
         </div>
       </h3>
       <h4>
-        <div className="wind">Wind 🌬 : 1 km/h</div>
+        <div className="wind">Wind 🌬 : {weatherData.wind} km/h</div>
         <div className="humidity">
           Humidity
           <span role="img" aria-label="drop">
             💧
           </span>{" "}
-          : 17%
+          : {weatherData.humidity}%
         </div>
       </h4>
     </div>
