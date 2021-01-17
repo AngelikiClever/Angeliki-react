@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Search.css";
 import axios from "axios";
 
 export default function Search() {
+    let city = "Athens";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+
   return (
       <div className="searchengine">
       <nav className="navbar navbar-light bg-light" />
