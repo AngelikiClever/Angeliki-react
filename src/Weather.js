@@ -1,25 +1,16 @@
 import React from "react";
+import Forecast from "./Forecast";
 import Topblock from "./Topblock";
+import Search from "./Search";
 
 export default function Weather() {
   return (
     <div className="weatherapp">
       <div className="row"></div>
       <Topblock />;
-      <nav className="navbar navbar-light bg-light" />
-      <form className="form-inline" />
-      <input
-        class="form-control mr-sm-2"
-        type="search"
-        placeholder="🔎 Search City"
-        aria-label="Search"
-      />
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Go!
-      </button>
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Current
-      </button>
+      <Forecast />;
+      <Search />;
+      
       <p>
         <a href="https://github.com/AngelikiClever/Angeliki-react.git">
           Open-source code
