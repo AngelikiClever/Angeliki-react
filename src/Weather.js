@@ -36,7 +36,7 @@ export default function Weather() {
         Current
       </button>
       <p>
-        <a href="https://github.com/AngelikiClever/Angeliki-SheCodes">
+        <a href="https://github.com/AngelikiClever/Angeliki-react.git">
           Open-source code
         </a>{" "}
         by Angeliki Zeaki

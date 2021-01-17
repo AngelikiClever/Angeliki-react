@@ -1,5 +1,6 @@
 import React from "react";
-
+import "./Topclock.css";
+import "./styles.css";
 
 
 export default function Weather() {
