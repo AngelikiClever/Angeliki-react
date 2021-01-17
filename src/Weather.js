@@ -6,21 +6,6 @@ export default function Weather() {
     <div className="weatherapp">
       <div className="row"></div>
       <Topblock />;
-      <div className="d-flex justify-content-around">
-        <div className="row">
-          <div className="col">
-            <div className="card border-info mb-3">
-              <div className="card-header"></div>
-              <div className="card-body text-info">
-                <img className="forecast-icon" alt="icon"/>
-                <div className="forecast-temperature">
-                  <strong></strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <nav className="navbar navbar-light bg-light" />
       <form className="form-inline" />
       <input

@@ -41,36 +41,6 @@ body {
   font-size: 20px;
   text-align: center;
 }
-.card-header {
-  text-align: center;
-  font-family: "Indie Flower", cursive;
-  color: #b392ac;
-  font-size: 20px;
-}
-.card-title {
-  text-align: center;
-  font-size: 20px;
-}
-.card-text {
-  text-align: center;
-  font-family: "Indie Flower", cursive;
-  color: #b392ac;
-}
-.forecast-icon {
-  width: 80px;
-  display: block;
-}
-.forecast-temperature {
-  text-align: center;
-  font-family: "Indie Flower", cursive;
-  color: #b392ac;
-  font-size: 22px;
-}
-.row {
-  align-items: center;
-  margin-bottom: 3px;
-  border-bottom: 10px;
-}
 
 p {
   font-family: "Indie Flower", cursive;
