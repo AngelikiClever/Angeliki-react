@@ -2,6 +2,7 @@ import React from "react";
 import Forecast from "./Forecast";
 import Topblock from "./Topblock";
 import Search from "./Search";
+import axios from "axios";
 
 export default function Weather() {
   return (
@@ -18,5 +19,5 @@ export default function Weather() {
         by Angeliki Zeaki
       </p>
     </div>
-  );
+  )
 }
