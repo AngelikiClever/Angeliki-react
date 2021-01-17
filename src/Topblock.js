@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function Weather() {
   let [ready, setReady] = useSate(false);
-  let [temweatherData, setWeatherData] = useState(null);
+  let [weatherData, setWeatherData] = useState(null);
   
 function handleResponse(response) {
 setWeatherData({
