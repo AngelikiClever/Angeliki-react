@@ -16,7 +16,7 @@ humidity: response.data.main.humidity,
 description: response.data.weather[0].description,
 city: response.data.name,
 });
-setTemperature();
+// setTemperature();
 setReady(true);
 
 }
@@ -63,6 +63,7 @@ else {
   let city = "Athens";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
 axios.get(apiUrl).then(handleResponse);
+return null;
 }
 
 
