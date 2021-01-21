@@ -1,8 +1,6 @@
 import React from "react";
 import Forecast from "./Forecast";
 import Topblock from "./Topblock";
-import Search from "./Search";
-import axios from "axios";
 
 export default function Weather() {
   
@@ -10,9 +8,9 @@ export default function Weather() {
     
     <div className="weatherapp">
       <div className="row"></div>
-      <Topblock />;
+      <Topblock defaultCity="Athens"/>;
       <Forecast />;
-      <Search />;
+      
       
       <p>
         <a href="https://github.com/AngelikiClever/Angeliki-react.git">
