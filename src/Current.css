@@ -4,3 +4,13 @@
 .Current form-control {
   font-family: "Indie Flower", cursive;
 }
+.Current h1 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  border-color: aliceblue;
+}
+.Current h3 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  border-color: aliceblue;
+}
