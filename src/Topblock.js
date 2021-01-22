@@ -44,7 +44,7 @@ if (weatherData.ready) {
 
   return (
 <div className="topblock">
-  <Current />
+  <Current data={weatherData}/>
       <div className="searchengine">
       <nav className="navbar navbar-light bg-light" />
 <form className="form-inline"
