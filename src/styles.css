@@ -9,10 +9,7 @@ body {
   margin-bottom: 3%;
   align-items: center;
 }
-.topblock {
-  align-items: right;
-  margin: 0 auto;
-}
+
 .weatherapp {
   border: double;
   border-color: aliceblue;
@@ -30,7 +27,10 @@ body {
 .topblock {
   font-family: "Indie Flower", cursive;
   text-align: center;
-  border-color: aliceblue;
+  color: aliceblue;
+  align-items: right;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 .wind {
@@ -38,6 +38,7 @@ body {
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   text-align: center;
+  margin-top: 10%;
 }
 
 .humidity {
