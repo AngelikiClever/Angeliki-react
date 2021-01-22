@@ -1,5 +1,6 @@
 import React from "react";
 import "./Current.css";
+import "./styles.css";
 
 export default function CurrentInfo(props) {
    
