@@ -91,3 +91,8 @@ p {
   border-color: #735d78;
   box-shadow: thistle;
 }
+
+.Topblock searchengine {
+  padding-top: 0;
+  display: inline-block;
+}

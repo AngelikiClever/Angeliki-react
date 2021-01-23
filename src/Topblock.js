@@ -47,7 +47,6 @@ if (weatherData.ready) {
 <div className="topblock">
   <Current data={weatherData}/>
       <div className="searchengine">
-      <nav className="navbar navbar-light bg-light" />
 <form className="form-inline"
 onSubmit={handleSubmit} />
       <input
