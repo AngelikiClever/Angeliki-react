@@ -1,27 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./Forecast.css";
+import ForecastPreview from "./ForecastPreview";
 
 import "./styles.css";
 
-export default function Forecast() {
-  return (
+export default function Forecast(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState(null);
 
+  function handleForecastResponse(response) {
+    setForecast(response.data);
+setLoaded(true);
+
+}
+
+if (loaded) {
+  return (
+   
 <div className="d-flex justify-content-around">
         <div className="row" id="forecast">
-          <div className="col">
-            <div className="card border-info mb-3" >
-              <div className="card-header"></div>
-              <div className="card-body text-info">
-                <img className="forecast-icon" alt="icon"/>
-                <div className="forecast-temperature">
-                    
-  
-                  <strong></strong>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ForecastPreview data={forecast.list[0]}/>
+          <ForecastPreview data={forecast.list[1]}/>
+          <ForecastPreview data={forecast.list[2]}/>
+          <ForecastPreview data={forecast.list[3]}/>
+          <ForecastPreview data={forecast.list[4]}/>
         </div>
         </div>
+
   )
+
+
+} else {
+  let apiKey = "6f7db97d4508405a35031f006368bb76";
+  let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
+  axios.get(url).then(handleForecastResponse);
+  return null;
 }
+}
+  
+  

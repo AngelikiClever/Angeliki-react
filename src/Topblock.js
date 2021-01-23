@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Topblock.css";
 import "./styles.css";
 import Current from "./Current";
+import Forecast from "./Forecast";
 import axios from "axios";
 
 
@@ -64,7 +65,10 @@ onSubmit={handleSubmit} />
         Current
       </button>
       </div>
+      <Forecast city={weatherData.city} />
 </div>
+      
+
   );
 }
 
