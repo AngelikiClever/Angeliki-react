@@ -38,7 +38,7 @@ body {
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .humidity {
@@ -58,8 +58,8 @@ p {
 .weathericon {
   width: 50px;
   display: block;
-  text-align: right;
-  float: right;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .btn-outline-success {
