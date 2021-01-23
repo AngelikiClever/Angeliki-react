@@ -48,7 +48,7 @@ if (weatherData.ready) {
   <Current data={weatherData}/>
       <div className="searchengine">
 <form className="form-inline"
-onSubmit={handleSubmit} />
+onSubmit={handleSubmit} >
       <input
         class="form-control mr-sm-2"
         type="search"
@@ -63,6 +63,7 @@ onSubmit={handleSubmit} />
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
         Current
       </button>
+      </form>
       </div>
 </div>
       <Forecast city={weatherData.city} />
