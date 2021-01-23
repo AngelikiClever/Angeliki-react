@@ -11,6 +11,12 @@ body {
 }
 
 .weatherapp {
+  width: 900px;
+  margin-top: 5%;
+  margin: 0 auto;
+  margin-bottom: none;
+}
+.reactapp {
   border: double;
   border-color: aliceblue;
   width: 900px;
@@ -27,14 +33,19 @@ body {
 .topblock {
   font-family: "Indie Flower", cursive;
   text-align: center;
-  color: aliceblue;
+  color: rgb(94, 22, 58);
   align-items: right;
   margin-top: 5%;
   margin-bottom: 10%;
 }
+.weatherapp {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  color: rgb(94, 22, 58);
+}
 
 .wind {
-  color: aliceblue;
+  color: rgb(94, 22, 58);
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   text-align: center;
@@ -42,7 +53,7 @@ body {
 }
 
 .humidity {
-  color: aliceblue;
+  color: rgb(94, 22, 58);
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   text-align: center;
@@ -50,7 +61,7 @@ body {
 
 p {
   font-family: "Indie Flower", cursive;
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
   font-size: 22px;
 }

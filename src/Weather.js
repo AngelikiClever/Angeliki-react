@@ -5,10 +5,9 @@ export default function Weather() {
   
   return (
     
-    <div className="weatherapp">
+    <div className="reactapp">
       <div className="row"></div>
-      <Topblock defaultCity="Athens"/>;      
-      
+      <Topblock defaultCity="Athens"/>;
       <p>
         <a href="https://github.com/AngelikiClever/Angeliki-react.git">
           Open-source code

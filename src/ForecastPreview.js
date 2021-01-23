@@ -1,4 +1,6 @@
 import React from "react";
+import "./Forecast.css";
+
 
 export default function ForecastPreview(props) {
 function hours() {

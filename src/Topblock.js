@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import "./Topblock.css";
 import "./styles.css";
 import Current from "./Current";
 import Forecast from "./Forecast";
@@ -44,6 +43,7 @@ if (weatherData.ready) {
 
 
   return (
+    <div className="weatherapp">
 <div className="topblock">
   <Current data={weatherData}/>
       <div className="searchengine">
@@ -65,6 +65,7 @@ onSubmit={handleSubmit} />
         Current
       </button>
       </div>
+</div>
       <Forecast city={weatherData.city} />
 </div>
       

@@ -1,12 +1,14 @@
-.Forecast card-header {
+.ForecastPreview card-header {
   text-align: center;
   font-family: "Indie Flower", cursive;
   color: #633e5b;
-  font-size: 20px;
+  font-size: 100px;
 }
 .Forecast card-title {
   text-align: center;
   font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  color: #633e5b;
 }
 .Forecast card-text {
   text-align: center;
@@ -27,4 +29,5 @@
   align-items: center;
   margin-bottom: 3px;
   border-bottom: 10px;
+  color: #633e5b;
 }
