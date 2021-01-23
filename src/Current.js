@@ -15,6 +15,7 @@ export default function CurrentInfo(props) {
       </h1>
       <h3>
         <WeatherTemp celsius={props.data.temperature} />
+        {props.data.description}
         <div className="weathericon">
           <img
             className="weathericon"
