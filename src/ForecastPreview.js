@@ -22,7 +22,6 @@ return (
               </div>
               <div className="card-body text-info">
                 <img className="forecast-icon" 
-                src={props.data.forecasticonurl}
                 alt="icon"
                 />
                 <div className="forecast-temperature">
