@@ -10,7 +10,10 @@ export default function Forecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function handleForecastResponse(response) {
-    setForecast(response.data);
+    setForecast({
+     forecast: response.data,
+    forecasticonurl: `http://openweathermap.org/img/wn/${response.forecast.list[0].icon}@2x.png`,
+    });
 setLoaded(true);
 
 }
