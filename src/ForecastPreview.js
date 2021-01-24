@@ -21,7 +21,10 @@ return (
 {hours()}
               </div>
               <div className="card-body text-info">
-                <img className="forecast-icon" alt="icon"/>
+                <img className="forecast-icon" 
+                src={props.data.forecasticon}
+                alt="icon"
+                />
                 <div className="forecast-temperature">
 {temperature()}
                   <strong></strong>

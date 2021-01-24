@@ -16,10 +16,11 @@ export default function CurrentInfo(props) {
       <h3>
         <WeatherTemp celsius={props.data.temperature} />
         {props.data.description}
+        
         <div className="weathericon">
           <img
             className="weathericon"
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+            src={props.data.iconUrl}
             alt="clear"
             id="icon"
           />

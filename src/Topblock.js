@@ -15,9 +15,11 @@ setWeatherData({
 temperature: response.data.main.temp,
 wind: response.data.wind.speed,
 humidity: response.data.main.humidity,
+iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`,
 description: response.data.weather[0].description,
 city: response.data.name,
-      icon: response.data.weather[0].icon,
+forecasticon: `http://openweathermap.org/img/wn/${response.forecast.list[0].icon}@2x.png`,
+icon: response.data.weather[0].icon,
 
 });
 
