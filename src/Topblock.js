@@ -49,6 +49,8 @@ if (weatherData.ready) {
       <div className="searchengine">
 <form className="form-inline"
 onSubmit={handleSubmit} >
+  <div className="row">
+                <div className="col-10">
       <input
         class="form-control mr-sm-2"
         type="search"
@@ -57,12 +59,16 @@ onSubmit={handleSubmit} >
         onChange={handleCityChange}
 
       />
+      </div>
+                <div className="col-2">
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
         Go!
       </button>
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
         Current
       </button>
+      </div>
+      </div>
       </form>
       </div>
 </div>
