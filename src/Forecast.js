@@ -15,7 +15,7 @@ setLoaded(true);
 
 }
 
-if (loaded) {
+if (loaded && props.city === forecast.city.name) {
   return (
    
 <div className="d-flex justify-content-around">
@@ -25,7 +25,6 @@ if (loaded) {
           <ForecastPreview data={forecast.list[2]}/>
           <ForecastPreview data={forecast.list[3]}/>
           <ForecastPreview data={forecast.list[4]}/>
-          <ForecastPreview data={forecast.list[5]}/>
         </div>
         </div>
 

@@ -15,7 +15,7 @@ setWeatherData({
 temperature: response.data.main.temp,
 wind: response.data.wind.speed,
 humidity: response.data.main.humidity,
-iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`,
+iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
 description: response.data.weather[0].description,
 city: response.data.name,
 icon: response.data.weather[0].icon,
@@ -65,9 +65,7 @@ onSubmit={handleSubmit} >
       <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
         Go!
       </button>
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Current
-      </button>
+      
       </div>
       </div>
       </form>
