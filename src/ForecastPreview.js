@@ -1,4 +1,5 @@
 import React from "react";
+import Forecast from "./Forecast";
 import "./Forecast.css";
 
 
@@ -25,7 +26,7 @@ return (
               className="card-body text-info">
                 <img 
                    className="forecasticon"
-            src={props.data.iconUrl}
+            src={forecast.list[0].weather.icon}
             alt="clear"
             id="icon"
                 />
