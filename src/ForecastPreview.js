@@ -2,6 +2,7 @@ import React from "react";
 import "./Forecast.css";
 
 
+
 export default function ForecastPreview(props) {
 function hours() {
 let date = new Date(props.data.dt * 1000)
@@ -20,17 +21,22 @@ return (
               <div className="card-header">
 {hours()}
               </div>
-              <div className="card-body text-info">
-                <img className="forecast-icon" 
-                alt="icon"
+              <div 
+              className="card-body text-info">
+                <img 
+                   className="forecasticon"
+            src={props.data.iconUrl}
+            alt="clear"
+            id="icon"
                 />
+          </div>
                 <div className="forecast-temperature">
 {temperature()}
                   <strong></strong>
                 </div>
               </div>
             </div>
-          </div>
+          
 );
 
 }
